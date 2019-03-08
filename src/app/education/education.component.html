@@ -1,0 +1,23 @@
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!-- Position Column -->
+  <ng-container matColumnDef="position">
+    <mat-cell *matCellDef="let element"> {{ element.position }} </mat-cell>
+  </ng-container>
+
+  <!-- Year Column -->
+  <ng-container matColumnDef="year">
+    <mat-cell *matCellDef="let element"> {{ element.year }} </mat-cell>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <mat-cell *matCellDef="let element"> {{ element.name }} </mat-cell>
+  </ng-container>
+
+  <!-- Course Column -->
+  <ng-container matColumnDef="course">
+    <mat-cell *matCellDef="let element"> {{ element.course }} </mat-cell>
+  </ng-container>
+
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
