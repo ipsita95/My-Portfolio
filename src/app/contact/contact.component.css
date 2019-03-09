@@ -1,8 +1,17 @@
 .example-container {
   display: flex;
   flex-direction: column;
+  margin-top: 5%;
 }
 
 .example-container > * {
   width: 100%;
+}
+h5 {
+  margin-top: 5%;
+  color: #3f7fb7;
+}
+p {
+  margin-top: 5%;
+  color: #777;
 }

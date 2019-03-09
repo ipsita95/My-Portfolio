@@ -1,3 +1,14 @@
 i {
   font-size: 5rem;
 }
+h5 {
+  margin-top: 5%;
+  color: #3f7fb7;
+}
+p {
+  margin-top: 5%;
+  color: #777;
+}
+mat-grid-list {
+  margin: 5% 2%;
+}
