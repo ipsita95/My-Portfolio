@@ -1,3 +1,26 @@
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Input" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Enter your email"
+      [formControl]="email"
+      required
+    />
+    <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Leave a message"></textarea>
+  </mat-form-field>
+</div>
+
+<div class="example-button-row">
+  <button mat-raised-button color="accent">Accent</button>
+</div>
 <p>
   simply email me at ipsitamallick95@gmail.com or contact me on
   <a href="https://www.linkedin.com/in/ipsita-mallick-7a7291137/"
