@@ -6,3 +6,6 @@ h5 {
   margin-top: 5%;
   color: #3f7fb7;
 }
+mat-row:nth-child(2) {
+  background-color: grey;
+}

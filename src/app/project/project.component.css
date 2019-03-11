@@ -2,3 +2,6 @@ h5 {
   margin-top: 5%;
   color: #3f7fb7;
 }
+.card {
+  box-shadow: 5px 10px #888888;
+}

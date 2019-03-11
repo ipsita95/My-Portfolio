@@ -1,14 +1,22 @@
 i {
   font-size: 5rem;
 }
-h5 {
-  margin-top: 5%;
-  color: #3f7fb7;
+h3 {
+  padding-top: 5%;
 }
 p {
   margin-top: 5%;
-  color: #777;
 }
 mat-grid-list {
-  margin: 5% 2%;
+  margin: 5%;
+}
+.container {
+  background-color: #3f7fb7;
+  border-radius: 1%;
+}
+i,
+h3,
+p,
+mat-grid-list {
+  color: white;
 }

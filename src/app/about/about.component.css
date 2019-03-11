@@ -19,3 +19,10 @@ button {
     margin-top: 0%;
   }
 }
+#download-wrapper a {
+  color: purple !important;
+  font-weight: bold;
+}
+#download-wrapper a:hover {
+  color: black !important;
+}

@@ -4,4 +4,8 @@ h5 {
 }
 mat-list {
   margin-top: 5%;
+  font-weight: bold;
+}
+mat-list-item {
+  animation-duration: 5s;
 }
