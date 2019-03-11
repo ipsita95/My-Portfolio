@@ -1,5 +1,10 @@
 import { Component } from "@angular/core";
-import { FormControl, Validators, ReactiveFormsModule } from "@angular/forms";
+import {
+  FormGroup,
+  FormControl,
+  Validators,
+  ReactiveFormsModule
+} from "@angular/forms";
 
 @Component({
   selector: "app-contact",
@@ -7,13 +12,14 @@ import { FormControl, Validators, ReactiveFormsModule } from "@angular/forms";
   styleUrls: ["./contact.component.css"]
 })
 export class ContactComponent {
-  email = new FormControl("", [Validators.required, Validators.email]);
-
-  getErrorMessage() {
-    return this.email.hasError("required")
-      ? "You must enter a value"
-      : this.email.hasError("email")
-      ? "Not a valid email"
-      : "";
+  form = new FormGroup({
+    name: new FormControl("", Validators.required),
+    email: new FormControl("", [Validators.email, Validators.required])
+  });
+  get name() {
+    return this.form.get("name");
+  }
+  get email() {
+    return this.form.get("email");
   }
 }
