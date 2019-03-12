@@ -13,6 +13,7 @@ p {
 }
 button {
   margin-top: 70%;
+  animation-duration: 2s;
 }
 @media screen and (max-width: 992px) {
   button {
@@ -22,6 +23,7 @@ button {
 #download-wrapper a {
   color: purple !important;
   font-weight: bold;
+  font-size: 25px;
 }
 #download-wrapper a:hover {
   color: black !important;
